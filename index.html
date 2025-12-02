@@ -1,178 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-End Developer Portfolio</title>
-
+    <title>Ahmad | Cyberpunk Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Ahmad, a Front-End Web Developer specializing in futuristic and modern web experiences.">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+    <!-- Background Particles/Grid -->
+    <div class="cyber-grid-bg"></div>
+    <div id="particles-js"></div>
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Ahmad <span>Portfolio</span>.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact" class="btn-primary" id="button-of-contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+        <div class="logo" data-text="AHMAD">AHMAD</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link" data-text="HOME">HOME</a></li>
+            <li><a href="#about" class="nav-link" data-text="ABOUT">ABOUT</a></li>
+            <li><a href="#skills" class="nav-link" data-text="SKILLS">SKILLS</a></li>
+            <li><a href="#projects" class="nav-link" data-text="PROJECTS">PROJECTS</a></li>
+            <li><a href="#services" class="nav-link" data-text="SERVICES">SERVICES</a></li>
+            <li><a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="hero" class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <span class="greeting">Hello, I'm</span>
-                <h1 class="name">Ahmad</h1>
-                <h2 class="role">Front-End Developer</h2>
-                <p class="tagline">Building aesthetic, modern, and performant web experiences.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn-primary">View Work</a>
-                    <a href="#contact" class="btn-secondary">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- Image will be placed here -->
-                <div class="img-placeholder">
-                    <!-- <img src="https://lh3.googleusercontent.com/a/ACg8ocIohVtHrx_Xfln5dop6VVkGY3C6JbT4GDzy9ExlIDRcvlrdSiSM=s400-c" alt=""> -->
-                </div>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 class="glitch-text" data-text="HELLO, I AM">HELLO, I AM</h2>
+            <h1 class="hero-name" data-text="AHMAD">AHMAD</h1>
+            <h3 class="hero-role">FRONT-END <span class="neon-text">WEB DEVELOPER</span></h3>
+            <p class="hero-tagline">CRAFTING DIGITAL EXPERIENCES IN THE CYBERSPACE.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="cyber-btn primary-btn">VIEW PROJECTS</a>
+                <a href="#contact" class="cyber-btn secondary-btn">CONTACT ME</a>
             </div>
         </div>
-    </header>
+        <div class="hero-visual">
+            <div class="cyber-circle">
+                <div class="circle-inner"></div>
+            </div>
+            <i class="fa-solid fa-code cyber-icon-float"></i>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-text="ABOUT ME">ABOUT ME</h2>
             <div class="about-content">
-                <p>
-                    I am a Front-End Developer with a passion for building futuristic and immersive web experiences.
-                    I completed my Intermediate education in 2025 and am currently focused on mastering front-end
-                    technologies.
-                </p>
-                <p>
-                    I am actively planning to dive into backend development in the upcoming months to become a
-                    full-stack developer.
-                    I love creating clean, efficient code and exploring new design trends.
-                </p>
+                <div class="about-frame">
+                    <div class="profile-pic-placeholder">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="frame-corner top-left"></div>
+                    <div class="frame-corner top-right"></div>
+                    <div class="frame-corner bottom-left"></div>
+                    <div class="frame-corner bottom-right"></div>
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate Front-End Developer with a knack for creating immersive and responsive web applications. My journey in the digital realm is driven by a desire to build futuristic interfaces that not only look stunning but perform flawlessly.</p>
+                    <p>With a strong foundation in modern web technologies, I transform creative concepts into functional reality. I love pushing the boundaries of UI/UX design.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills">
+    <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title" data-text="MY SKILLS">MY SKILLS</h2>
             <div class="skills-grid">
-                <!-- Skill items will be populated here -->
-                <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
-                <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-                <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                <div class="skill-card"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
-                <div class="skill-card"><i class="fas fa-code"></i><span>VS Code</span></div>
+                <!-- HTML -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 skill-icon"></i>
+                    <h3>HTML5</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <!-- CSS -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt skill-icon"></i>
+                    <h3>CSS3</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <!-- JS -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-js skill-icon"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <!-- React -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-react skill-icon"></i>
+                    <h3>React</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <!-- Bootstrap -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-bootstrap skill-icon"></i>
+                    <h3>Bootstrap</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <!-- Git -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt skill-icon"></i>
+                    <h3>Git</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title" data-text="SERVICES">SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Building fast, secure, and scalable websites using the latest technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and visually stunning interfaces for better user engagement.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring your website looks perfect on all devices, from desktops to mobiles.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-text="PROJECTS">PROJECTS</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-img-placeholder">
-
-                    </div>
-                    <div class="project-info">
-                        <h3>College Webpage</h3>
-                        <p>A responsive interface for GTTI RYK using HTML, CSS, and JS.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                        <!-- Placeholder for project image -->
+                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
+                            <i class="fa-solid fa-laptop-code"></i>
                         </div>
                     </div>
-                </article>
+                    <div class="project-info">
+                        <h3>Neon E-Commerce</h3>
+                        <p>A futuristic shopping platform built with React.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-img-placeholder"></div>
-                    <div class="project-info">
-                        <h3>Weather App</h3>
-                        <p>Real-time weather application fetching data from OpenWeatherMap API.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
+                            <i class="fa-solid fa-gamepad"></i>
                         </div>
                     </div>
-                </article>
+                    <div class="project-info">
+                        <h3>Cyber Dashboard</h3>
+                        <p>Admin dashboard with real-time data visualization.</p>
+                        <div class="tags">
+                            <span>Vue</span>
+                            <span>D3.js</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-img-placeholder"></div>
-                    <div class="project-info">
-                        <h3>Task Management Tool</h3>
-                        <p>A drag-and-drop task manager built with Vanilla JS and LocalStorage.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
+                            <i class="fa-solid fa-robot"></i>
                         </div>
                     </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience">
-        <div class="container">
-            <h2 class="section-title">Experience & Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2025 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Front-End Developer</h3>
-                        <h4>Freelance / Personal Projects</h4>
-                        <p>Building responsive websites and working on personal portfolio projects. Preparing for
-                            backend development.</p>
+                    <div class="project-info">
+                        <h3>AI Chat Interface</h3>
+                        <p>Modern chat UI for an AI assistant.</p>
+                        <div class="tags">
+                            <span>JS</span>
+                            <span>OpenAI API</span>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023 - 2025</div>
-                    <div class="timeline-content">
-                        <h3>Intermediate Education</h3>
-                        <h4>Punjab College</h4>
-                        <p>Completed Intermediate studies with a focus on Computer Science/Science.</p>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - 2023</div>
-                    <div class="timeline-content">
-                        <h3>Matriculation</h3>
-                        <h4>Doctor Public School</h4>
-                        <p>Completed Matriculation with a focus on Science.</p>
+                    <div class="project-info">
+                        <h3>Synthwave Player</h3>
+                        <p>Music player with audio visualization.</p>
+                        <div class="tags">
+                            <span>HTML5 Audio</span>
+                            <span>Canvas</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,62 +271,57 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-text="CONTACT ME">CONTACT ME</h2>
             <div class="contact-wrapper">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="cyber-btn primary-btn">SEND MESSAGE</button>
+                </form>
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>ahmad07092008@gmail.com</p>
-                        </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>email@example.com</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p>www.linkedin.com/in/ahmadjutt2008</p>
-                        </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Cyber City, Web</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h3>GitHub</h3>
-                            <p>github.com/ahmadjutt2008</p>
-                        </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Ahmad | All rights reserved</p>
-            <div class="social-links">
-                <a href="https://api.whatsapp.com/send/?phone=%2B923398730099&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/ahmadjutt2008/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/ahmadjutt2008"><i class="fab fa-github"></i></a>
-            </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 AHMAD. All Rights Reserved.</p>
+            <div class="footer-line"></div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
