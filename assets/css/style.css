@@ -136,6 +136,10 @@ a {
     padding-top: 80px;
 }
 
+#home .btn {
+    white-space: nowrap;
+}
+
 .hero-overlay {
     background: linear-gradient(180deg, rgba(5, 7, 10, 0.85) 0%, rgba(5, 7, 10, 0.95) 100%);
 }
@@ -266,5 +270,7 @@ section {
     #home {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
+        margin-top: -30px !important;
+        margin-bottom: -30px !important;
     }
 }
