@@ -1,0 +1,30 @@
+# Portfolio Website Task List
+
+- [ ] Project Setup & Planning <!-- id: 0 -->
+    - [ ] Create implementation plan <!-- id: 1 -->
+    - [ ] Analyze requirements and design system <!-- id: 2 -->
+- [/] Asset Generation <!-- id: 3 -->
+    - [x] Generate Hero Section Background/Image <!-- id: 4 -->
+    - [x] Generate Project Image: GTI Digital Campus (LMS/Education Platform) <!-- id: 5 -->
+    - [x] Generate Project Image: Azaan Enterprises (Corporate/Business) <!-- id: 25 -->
+    - [x] Generate Project Image: LuxeStays (Real Estate) <!-- id: 26 -->
+    - [x] Generate Project Image: TechFlow (SaaS Dashboard) <!-- id: 27 -->
+- [ ] Core Structure Implementation <!-- id: 6 -->
+    - [ ] Setup HTML5 Boilerplate with Bootstrap 5 <!-- id: 7 -->
+    - [ ] Create Hero Section <!-- id: 8 -->
+    - [ ] Create About Section <!-- id: 9 -->
+    - [ ] Create Skills Section <!-- id: 10 -->
+    - [ ] Create Projects / Portfolio Section (GTI, Azaan, +2 others) <!-- id: 11 -->
+    - [ ] Create Services Section <!-- id: 12 -->
+    - [ ] Create Why Choose Me Section <!-- id: 13 -->
+    - [ ] Create Contact Section <!-- id: 14 -->
+- [ ] Styling & Design (custom.css) <!-- id: 15 -->
+    - [ ] Implement Color Palette & Typography <!-- id: 16 -->
+    - [ ] Add Animations & Hover Effects <!-- id: 17 -->
+    - [ ] Ensure Mobile Responsiveness <!-- id: 18 -->
+- [ ] Functionality (script.js) <!-- id: 19 -->
+    - [ ] Form Validation <!-- id: 20 -->
+    - [ ] Smooth Scrolling & Navigation Logic <!-- id: 21 -->
+- [ ] Verification & Final Polish <!-- id: 22 -->
+    - [ ] Cross-browser check (simulated) <!-- id: 23 -->
+    - [ ] Final UI Review <!-- id: 24 -->
