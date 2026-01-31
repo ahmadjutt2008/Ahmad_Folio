@@ -1,96 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Portfolio</title>
-    <meta name="description" content="Portfolio of Ahmad, a Front-End Web Developer specializing in futuristic and modern web experiences.">
-    
+    <title>Ahmed | Full-Stack Web Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <!-- Background Particles/Grid -->
-    <div class="cyber-grid-bg"></div>
-    <div id="particles-js"></div>
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo" data-text="AHMAD">AHMAD</div>
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link" data-text="HOME">HOME</a></li>
-            <li><a href="#about" class="nav-link" data-text="ABOUT">ABOUT</a></li>
-            <li><a href="#skills" class="nav-link" data-text="SKILLS">SKILLS</a></li>
-            <li><a href="#services" class="nav-link" data-text="SERVICES">SERVICES</a></li>
-            <li><a href="#projects" class="nav-link" data-text="PROJECTS">PROJECTS</a></li>
-            <li><a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a></li>
-        </ul>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background: rgba(10, 14, 23, 0.95); backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Ahmad<span class="text-cyan">Dev</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="https://api.whatsapp.com/send/?phone=%2B923166822451&text&type=phone_number&app_absent=0" class="btn btn-outline-info ms-lg-3 rounded-pill px-4">Hire Me</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h2 class="glitch-text" data-text="HELLO, I AM">HELLO, I AM</h2>
-            <h1 class="hero-name" data-text="AHMAD">AHMAD</h1>
-            <h3 class="hero-role">FRONT-END <span class="neon-text">WEB DEVELOPER</span></h3>
-            <p class="hero-tagline">Building aesthetic, modern, and performant web experiences.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="cyber-btn primary-btn">VIEW PROJECTS</a>
-                <a href="#contact" class="cyber-btn secondary-btn">CONTACT ME</a>
+    <section id="home" class="d-flex align-items-center position-relative"
+        style="min-height: 100vh; background: url('assets/images/hero-bg.png') no-repeat center center/cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(10,14,23,0.85);"></div>
+        <div class="container position-relative z-1 text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto mx-lg-0">
+                    <h4 class="text-cyan mb-3">Hello, I'm Ahmad</h4>
+                    <h1 class="display-3 fw-bold mb-4">Building Modern, <br>Responsive & <span
+                            class="text-cyan">High-Converting</span> Websites</h1>
+                    <p class="lead text-light mb-5" style="opacity: 0.9; max-width: 600px;">
+                        Professional Full-Stack Web Developer specializing in business solutions, custom web
+                        applications, and premium user experiences.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#projects" class="btn btn-info btn-lg rounded-pill px-5 text-white fw-bold">View
+                            Projects</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-5">Contact Me</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-visual">
-            <div class="cyber-circle">
-                <div class="circle-inner"></div>
-            </div>
-            <i class="fa-solid fa-code cyber-icon-float"></i>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title" data-text="ABOUT ME">ABOUT ME</h2>
-            <div class="about-content">
-                <div class="about-frame">
-                    <!-- <div class="profile-pic-placeholder">
-                    <i class="fa-solid fa-user-astronaut"></i>
-                    </div> -->
-                    <img class="profile-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-ec-EUOp9lS_a-ksXbUyddoVceaWSrRL7w&s" alt="">
-                    <div class="frame-corner top-left"></div>
-                    <div class="frame-corner top-right"></div>
-                    <div class="frame-corner bottom-left"></div>
-                    <div class="frame-corner bottom-right"></div>
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <!-- Placeholder for professional abstract visuals or profile if user adds one later -->
+                    <div class="p-5 border border-info border-opacity-25 rounded-4 text-center bg-dark-2">
+                        <i class="fas fa-code fa-5x text-cyan mb-4"></i>
+                        <h3>Passionate Developer</h3>
+                        <p class="text-muted">Turning ideas into functional, beautiful realities.</p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <p>I am a passionate Front-End Developer with a knack for creating immersive and responsive web applications. My journey in the digital realm is driven by a desire to build futuristic interfaces that not only look stunning but perform flawlessly.</p>
-                    <p>With a strong foundation in modern web technologies, I transform creative concepts into functional reality. I love pushing the boundaries of UI/UX design.</p>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number">4+</span>
-                            <span class="stat-label">Months Exp</span>
+                <div class="col-lg-6 ps-lg-5">
+                    <h6 class="text-cyan text-uppercase letter-spacing-2">About Me</h6>
+                    <h2 class="mb-4">Professional Full-Stack<br>Web Developer</h2>
+                    <p class="text-muted mb-4">
+                        I am a dedicated web developer with deep expertise in building scalable, responsive, and
+                        performance-optimized websites.
+                        My focus is not just on writing code, but on delivering business value through clean design and
+                        robust functionality.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Whether you need a high-converting landing page, a complex business platform, or a modern
+                        portfolio, I bring technical precision and creative problem-solving to every project.
+                    </p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-cyan me-2"></i>
+                                <span>Clean & Modern UI</span>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">16</span>
-                            <span class="stat-label">Project</span>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-cyan me-2"></i>
+                                <span>SEO Optimized</span>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Support</span>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-cyan me-2"></i>
+                                <span>Backend Experts</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-cyan me-2"></i>
+                                <span>Mobile First</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,171 +120,342 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title" data-text="MY SKILLS">MY SKILLS</h2>
-            <div class="skills-grid">
-                <!-- HTML -->
-                <div class="skill-card">
-                    <i class="fa-brands fa-html5 skill-icon"></i>
-                    <h3>HTML5</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 95%;"></div>
-                    </div>
-                </div>
-                <!-- CSS -->
-                <div class="skill-card">
-                    <i class="fa-brands fa-css3-alt skill-icon"></i>
-                    <h3>CSS3</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <!-- JS -->
-                <div class="skill-card">
-                    <i class="fa-brands fa-js skill-icon"></i>
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <!-- React -->
-                <div class="skill-card">
-                    <i class="fa-brands fa-react skill-icon"></i>
-                    <h3>React</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <!-- Bootstrap -->
-                <div class="skill-card">
-                    <i class="fa-brands fa-bootstrap skill-icon"></i>
-                    <h3>Bootstrap</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <!-- Git -->
-                <div class="skill-card">
-                    <i class="fa-brands fa-git-alt skill-icon"></i>
-                    <h3>Git</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 75%;"></div>
-                    </div>
-                </div>
+    <section id="skills" class="py-5 bg-dark-2">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-cyan text-uppercase">My Expertise</h6>
+                <h2 class="section-title">Technical Skills</h2>
             </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="section-title" data-text="SERVICES">SERVICES</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-code"></i>
+            <div class="row g-4">
+                <!-- Frontend -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 rounded-4 border border-secondary border-opacity-10 bg-dark">
+                        <h4 class="mb-4"><i class="fas fa-laptop-code text-cyan me-2"></i> Frontend</h4>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML5 / CSS3</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: #222;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Bootstrap 5</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: #222;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript (Vanilla)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: #222;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Web Development</h3>
-                    <p>Building fast, secure, and scalable websites using the latest technologies.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-layer-group"></i>
+
+                <!-- Backend -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 rounded-4 border border-secondary border-opacity-10 bg-dark">
+                        <h4 class="mb-4"><i class="fas fa-server text-cyan me-2"></i> Backend</h4>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>PHP</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: #222;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>MySQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: #222;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Creating intuitive and visually stunning interfaces for better user engagement.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-mobile-screen"></i>
+
+                <!-- Tools -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 rounded-4 border border-secondary border-opacity-10 bg-dark">
+                        <h4 class="mb-4"><i class="fas fa-tools text-cyan me-2"></i> Tools</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span
+                                class="badge bg-secondary bg-opacity-10 text-light px-3 py-2 border border-secondary border-opacity-25">Git</span>
+                            <span
+                                class="badge bg-secondary bg-opacity-10 text-light px-3 py-2 border border-secondary border-opacity-25">GitHub</span>
+                            <span
+                                class="badge bg-secondary bg-opacity-10 text-light px-3 py-2 border border-secondary border-opacity-25">VS
+                                Code</span>
+
+                        </div>
                     </div>
-                    <h3>Responsive Design</h3>
-                    <p>Ensuring your website looks perfect on all devices, from desktops to mobiles.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title" data-text="PROJECTS">PROJECTS</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="overlay">
-                            <button class="view-btn">View Details</button>
+    <section id="projects" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-cyan text-uppercase">Portfolio</h6>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- GTI Digital Campus -->
+                <div class="col-lg-6">
+                    <div class="card bg-dark-2 border-0 h-100 project-card overflow-hidden">
+                        <div class="project-img-wrapper" style="height: 280px; overflow: hidden;">
+                            <img src="assets/images/projects/GTTI.png" class="img-fluid w-100 h-100 object-fit-cover"
+                                alt="GTI Digital Campus">
                         </div>
-                        <!-- Placeholder for project image -->
-                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Neon E-Commerce</h3>
-                        <p>A futuristic shopping platform built with React.</p>
-                        <div class="tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
-                            <i class="fa-solid fa-gamepad"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Cyber Dashboard</h3>
-                        <p>Admin dashboard with real-time data visualization.</p>
-                        <div class="tags">
-                            <span>Vue</span>
-                            <span>D3.js</span>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold mb-3">GTTI Digital Campus</h3>
+                            <p class="card-text text-muted mb-4">A comprehensive Learning Management System (LMS)
+                                designed for modern education. Features include student portals, course tracking,
+                                analytics dashboards, and automated grading.</p>
+                            <div class="d-flex gap-2 mb-4 flex-wrap">
+                                <span
+                                    class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25">PHP</span>
+                                <span
+                                    class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25">MySQL</span>
+                                <span
+                                    class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25">Bootstrap
+                                    5</span>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="https://ahmadjutt2008.github.io/GTTI-Digital-Campus-Management-System/"
+                                    class="btn btn-outline-info rounded-pill px-4">Live Demo</a>
+                                <a href="#" class="btn btn-dark rounded-pill px-4 border">Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="overlay">
-                            <button class="view-btn">View Details</button>
+
+                <!-- Azaan Enterprises -->
+                <div class="col-lg-6">
+                    <div class="card bg-dark-2 border-0 h-100 project-card overflow-hidden">
+                        <div class="project-img-wrapper" style="height: 280px; overflow: hidden;">
+                            <img src="assets/images/projects/AzaanEnterprices.png"
+                                class="img-fluid w-100 h-100 object-fit-cover" alt="Azaan Enterprises">
                         </div>
-                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
-                            <i class="fa-solid fa-robot"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>AI Chat Interface</h3>
-                        <p>Modern chat UI for an AI assistant.</p>
-                        <div class="tags">
-                            <span>JS</span>
-                            <span>OpenAI API</span>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold mb-3">Azaan Enterprises</h3>
+                            <p class="card-text text-muted mb-4">A professional corporate website for a business
+                                consultancy firm. Focused on trust, speed, and conversion with a clean service catalog
+                                and appointment booking system.</p>
+                            <div class="d-flex gap-2 mb-4 flex-wrap">
+                                <span
+                                    class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25">HTML5</span>
+                                <span
+                                    class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25">CSS3</span>
+                                <span
+                                    class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25">JS</span>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="https://ahmadjutt2008.github.io/Azaan-Enterprises/"
+                                    class="btn btn-outline-info rounded-pill px-4">Live Demo</a>
+                                <a href="#" class="btn btn-dark rounded-pill px-4 border">Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="overlay">
-                            <button class="view-btn">View Details</button>
+
+                <!-- LuxeEstate -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark-2 border-0 h-100 project-card overflow-hidden">
+                        <div class="project-img-wrapper" style="height: 180px; overflow: hidden;">
+                            <img src="assets/images/projects/LuxeEstate.png"
+                                class="img-fluid w-100 h-100 object-fit-cover" alt="LuxeStays">
                         </div>
-                        <div class="placeholder-img" style="background: linear-gradient(45deg, #111, #222);">
-                            <i class="fa-solid fa-music"></i>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="card-title fw-bold mb-2">LuxeEstate</h4>
+                            <p class="card-text text-muted small mb-3">Premium real estate listing platform with
+                                filtering and detailed property views.</p>
+                            <div class="d-flex gap-3 mt-auto">
+                                <a href="https://ahmadjutt2008.github.io/Luxe-Estate/"
+                                    class="btn btn-sm btn-outline-light rounded-pill px-3">View Project</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Synthwave Player</h3>
-                        <p>Music player with audio visualization.</p>
-                        <div class="tags">
-                            <span>HTML5 Audio</span>
-                            <span>Canvas</span>
+                </div>
+
+                <!-- IronPulse -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark-2 border-0 h-100 project-card overflow-hidden">
+                        <div class="project-img-wrapper" style="height: 180px; overflow: hidden;">
+                            <img src="assets/images/projects/IronPulse.png"
+                                class="img-fluid w-100 h-100 object-fit-cover" alt="TechFlow">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="card-title fw-bold mb-2">Iron Pulse Gym</h4>
+                            <p class="card-text text-muted small mb-3">High-energy gym website with membership plans,
+                                class schedules, and trainer profiles.</p>
+                            <div class="d-flex gap-3 mt-auto">
+                                <a href="https://ahmadjutt2008.github.io/Iron-Pulse/"
+                                    class="btn btn-sm btn-outline-light rounded-pill px-3">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gourmet Haven Restaurant -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark-2 border-0 h-100 project-card overflow-hidden">
+                        <div class="project-img-wrapper" style="height: 180px; overflow: hidden;">
+                            <img src="assets/images/projects/GourmetHaven.png"
+                                class="img-fluid w-100 h-100 object-fit-cover" alt="Gourmet Haven">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="card-title fw-bold mb-2">Gourmet Haven</h4>
+                            <p class="card-text text-muted small mb-3">Modern restaurant website with menu showcase,
+                                table reservation, and online ordering.</p>
+                            <div class="d-flex gap-3 mt-auto">
+                                <a href="https://ahmadjutt2008.github.io/Gourmet-Haven-Restaurant/"
+                                    class="btn btn-sm btn-outline-light rounded-pill px-3">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Projects placeholder -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark-2 border-dashed border-secondary h-100 d-flex align-items-center justify-content-center text-center p-4"
+                        style="border-style: dashed !important; min-height: 350px;">
+                        <div>
+                            <i class="fas fa-plus fa-3x text-white mb-3"></i>
+                            <h5 class="text-white">More Projects<br>Coming Soon</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-dark-2">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-cyan text-uppercase">What I Offer</h6>
+                <h2 class="section-title">My Services</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-0 h-100 p-4 hover-lift">
+                        <div class="mb-4">
+                            <i class="fas fa-laptop-code fa-3x text-cyan"></i>
+                        </div>
+                        <h4 class="mb-3">Business Websites</h4>
+                        <p class="text-white">
+                            Professional, fast-loading websites tailored to your brand. I build sites that convert
+                            visitors into customers.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-0 h-100 p-4 hover-lift">
+                        <div class="mb-4">
+                            <i class="fas fa-layer-group fa-3x text-cyan"></i>
+                        </div>
+                        <h4 class="mb-3">Web Applications</h4>
+                        <p class="text-white">
+                            Scalable web apps with secure backends. From booking systems to customer portals, I handle
+                            complexity.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-0 h-100 p-4 hover-lift">
+                        <div class="mb-4">
+                            <i class="fas fa-paint-brush fa-3x text-cyan"></i>
+                        </div>
+                        <h4 class="mb-3">UI/UX Design & Redesign</h4>
+                        <p class="text-white">
+                            Modernize your existing site with a premium new look. Improved usability, aesthetics, and
+                            mobile performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section id="why-me" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h6 class="text-cyan text-uppercase">Why Hire Me?</h6>
+                    <h2 class="mb-4">Delivering Excellence <br> in Every Pixel</h2>
+                    <div class="d-flex flex-column gap-4 mt-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-info bg-opacity-10 p-3 rounded-circle text-cyan">
+                                    <i class="fas fa-clock fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h5>On-Time Delivery</h5>
+                                <p class="text-white">I respect deadlines and ensure your project is launched when you
+                                    expect it.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-info bg-opacity-10 p-3 rounded-circle text-cyan">
+                                    <i class="fas fa-comments fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h5>Clear Communication</h5>
+                                <p class="text-white">Regular updates and transparent workflow. You are always in the
+                                    loop.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-info bg-opacity-10 p-3 rounded-circle text-cyan">
+                                    <i class="fas fa-rocket fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h5>Client-First Approach</h5>
+                                <p class="text-white">I build solutions for YOUR business goals, not just for the sake
+                                    of code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Minimal visual representation -->
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-4 bg-dark-2 rounded-4 text-center border-bottom border-4 border-info">
+                                <h2 class="display-4 fw-bold text-white mb-0">100%</h2>
+                                <p class="text-white small">Satisfaction</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 bg-dark-2 rounded-4 text-center border-bottom border-4 border-info">
+                                <h2 class="display-4 fw-bold text-white mb-0">24/7</h2>
+                                <p class="text-white small">Support</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -272,41 +464,66 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title" data-text="CONTACT ME">CONTACT ME</h2>
-            <div class="contact-wrapper">
-                <form class="contact-form">
-                    <div class="input-group">
-                        <input type="text" required>
-                        <label>Name</label>
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" required>
-                        <label>Email</label>
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="input-group">
-                        <textarea required></textarea>
-                        <label>Message</label>
-                        <span class="focus-border"></span>
-                    </div>
-                    <button type="submit" class="cyber-btn primary-btn">SEND MESSAGE</button>
-                </form>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>ahmad07092008@gmailcom</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>GTTI,Rahim Yar Khan</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/ahmadjutt2008" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/ahmadjutt2008/" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=%2B923398730099&text&type=phone_number&app_absent=0" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+    <section id="contact" class="py-5 bg-dark-2">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h6 class="text-cyan text-uppercase">Get In Touch</h6>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="text-white mt-3">Ready to start your next project? Send me a message and I'll get back to
+                        you within 24 hours.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card bg-dark border-0 p-4 p-lg-5 rounded-4 shadow-lg">
+                        <div class="row">
+                            <div class="col-md-5 mb-4 mb-md-0 border-end border-secondary border-opacity-25">
+                                <h4 class="mb-4">Contact Info</h4>
+                                <div class="mb-4">
+                                    <p class="text-white small text-uppercase mb-1">Email</p>
+                                    <p class="text-white fs-5 text-decoration-none">ahmad07092008@gmail.com</p>
+                                </div>
+                                <div class="mb-4">
+                                    <p class="text-white small text-uppercase mb-1">WhatsApp</p>
+                                    <a href="https://api.whatsapp.com/send/?phone=%2B923166822451&text&type=phone_number&app_absent=0"
+                                        class="text-white fs-5 text-decoration-none">+92 316 6822451</a>
+                                </div>
+                                <div>
+                                    <p class="text-white small text-uppercase mb-2">Socials</p>
+                                    <div class="d-flex gap-3">
+                                        <a href="https://api.whatsapp.com/send/?phone=%2B923166822451&text&type=phone_number&app_absent=0" class="btn btn-outline-light rounded-circle px-0"
+                                            style="width: 40px; height: 40px;"><i
+                                                class="fab fa-whatsapp lh-base"></i></a>
+                                        <!-- <a href="#" class="btn btn-outline-light rounded-circle px-0"
+                                            style="width: 40px; height: 40px;"><i
+                                                class="fab fa-linkedin-in lh-base"></i></a> -->
+                                        <a href="https://github.com/ahmadjutt2008" class="btn btn-outline-light rounded-circle px-0"
+                                            style="width: 40px; height: 40px;"><i class="fab fa-github lh-base"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 ps-md-5">
+                                <h4 class="mb-4">Send Message</h4>
+                                <form onsubmit="sendToWhatsapp(event)">
+                                    <div class="mb-3">
+                                        <input type="text" id="name" class="form-control bg-dark-2 border-0 text-light py-3"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" id="email" class="form-control bg-dark-2 border-0 text-light py-3"
+                                            placeholder="Your Email" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <textarea id="message" class="form-control bg-dark-2 border-0 text-light py-3" rows="4"
+                                            placeholder="Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-info w-100 text-white fw-bold py-3 rounded-pill">
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -314,15 +531,15 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 AHMAD. All Rights Reserved.</p>
-            <div class="footer-line"></div>
+    <footer class="py-4 text-center text-muted border-top border-secondary border-opacity-10">
+        <div class="container">
+            <p class="mb-0 text-white">&copy; 2025 Ahmad. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
